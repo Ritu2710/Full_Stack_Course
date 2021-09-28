@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: mediumpurple;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 300px;
+        }
+
+        .child {
+            height: 100px;
+            width: 200px;
+            background: black;
+        }
+
+        .parent:hover .child {
+            /* visibility: hidden; */
+            display: none;
+            /* display: block;
+            display: inline; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique molestiae quasi accusantium illo modi,
+        corrupti nesciunt, rerum ad, laudantium fugiat velit recusandae nihil atque voluptatem itaque facere animi nobis
+        soluta!
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
