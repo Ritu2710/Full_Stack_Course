@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Todo list</title>
     <style>
-div.parent{
-    background-color:black;
-    color: #fff;
-    font-size: 2rem;
-}
-@media(max-width :500px){
-    div.parent{
-        background-color: brown !important;
-        color: #fff;
-    }
-}
-@media(max-width :700px){
-    div.parent{
-        background-color:chartreuse;
-        color: #fff;
-    }
-}
+        div.parent {
+            display: flex;
+            align-items: stretch;
+            background-color: #111;
+            height: 100vh;
+        }
+        
+        div.child {
+            background-color: #ffbf00;
+            flex-basis: 80%;
+        }
+        
+        div.sidebar {
+            background-color: crimson;
+            flex-basis: 20%;
+        }
+        @media(max-width: 550px){
+            div.sidebar{
+               animation: 5s expand linear infinte;
+            }
+            div.child{
+                flex-basis: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="parent">
-    <h1>i am a heading</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde quia accusantium reprehenderit molestiae blanditiis at magnam iste maxime doloribus eveniet ipsum, aliquid voluptatibus illo amet quisquam perspiciatis ab dicta.
-</div>
+        <div class="sidebar"></div>
+        <div class="child"></div>
+    </div>
 </body>
+
 </html>
