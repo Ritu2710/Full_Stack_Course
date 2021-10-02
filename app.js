@@ -1,16 +1,9 @@
-//primitive datatype
-//string
-console.log(typeof"hellow world")
-console.log(typeof"p")
-
-//number
-console.log(typeof 1)
-console.log(typeof 1.2)
-console.log(typeof 11234659876809724356587823)
-console.log(typeof -1)
-console.log(typeof -1.2)
-console.log(typeof 11223344556677888)
-
-//boolean
-console.log(typeof true)
-console.log(typeof false)
+var age=19
+age=20
+console.log(age)
+//non-primitive datatype
+var arr = [1,2,3,4,]
+console.log(arr)
+arr.push(5)
+console.log(arr)
+console.log(arr.length)
