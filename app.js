@@ -1,16 +1,19 @@
-var list = document.querySelector('ul')
+// function greet(Name='riya',age='45'){
+//     console.log(Name,age)
+//     // console.log('Hello world')
+//     // console.log('Hey ' + Name + " Your age is " +age)
+// }
+// greet()
 
+console.log(add(10, 20))
 
-var arr = ['Go to the GYM','cook oatmeal','Eat']
-arr.push('complete the assignment')
+// function add(a = 0, b = 0) {
+//     var sum = a + b
+//     return sum
 
-for (var i =  0;  i < arr.length; i++) 
-{
-var element = document.createElement('li')
-var textNode = document.createTextNode(arr[i])
-element.appendChild(textNode)
-list.appendChild(element)
-
-
-    
+// }
+var add = function (a = 0, b = 0) {
+    var sum = a + b
+    return sum
 }
+
